@@ -45,7 +45,7 @@
               <div className='tips' key={tip.id}>
                 <div className='tipsHeader'></div>
                 <div className='title'>
-                  <h1> {tip.title}</h1>
+                  <h1>{ tip.title }</h1>
                 </div>
                 <div className='updateTip'>
                 </div>
