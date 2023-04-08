@@ -1,11 +1,11 @@
-.createPostPage {
+.create-post-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
   
-  .createPostContainer {
+  .create-post-ontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,19 +17,19 @@
     width: 400px;
   }
   
-  .inputCreate {
+  .input-create {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
     width: 100%;
   }
   
-  .inputCreate label {
+  .input-create label {
     font-size: 1.2rem;
     margin-bottom: 5px;
   }
   
-  .inputCreate input {
+  .input-create input {
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -37,7 +37,7 @@
     width: 100%;
   }
   
-  .inputCreate input:focus {
+  .input-create input:focus {
     outline: none;
     box-shadow: 0 0 5px #2196f3;
   }

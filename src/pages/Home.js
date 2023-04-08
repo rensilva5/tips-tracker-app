@@ -39,32 +39,30 @@
       
 
       return (
-        <div className='homePage'>
+        <div className='home-page'>
           {tipsList.map((tip, index) => {
             return (
               <div className='tips' key={tip.id}>
-                <div className='tipsHeader'></div>
+                <div className='tips-header'></div>
                 <div className='title'>
                   <h1>{ tip.title }</h1>
                 </div>
-                <div className='updateTip'>
-                </div>
-                <div>
+                <div className='update-tip'>
+                  <div className='list-tips-container'>$ {tip.addTip}.00</div>
                   <input
                     // key={tip.id}
                     type='number'
                     value={newTip.id}
                     onChange={(e) => setNewTip(e.target.value)}
-                  />
+                    />
                 <button onClick={() => addNewTip(index)}>
-                    <p>UPDATE TIP</p>
+                    <p>Update Tip</p>
                   </button>
-                </div>
-                <div className='listTipsContainer'>$ {tip.addTip}.00</div>
-                <div className='listTipsAuthor'>
+                  </div>
+                <div className='list-tips-author'>
                   <h3>@{tip.author.name}</h3>
                 </div>
-                <div className='deleteTip'>
+                <div className='delete-tip'>
                   {isAuth && tip.author.id === auth.currentUser.uid && (
                     <button onClick={() => deleteTip(tip.id)}>&#128465;</button>
                   )}

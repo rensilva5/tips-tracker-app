@@ -27,14 +27,14 @@ a {
   font-size: 25px;
 }
 
-.createPostPage {
+.create-post-page {
   width: 100%;
   height: calc(100vh - 80px);
   display: grid;
   place-items: center;
 }
 
-.createPostContainer {
+.create-post-container {
   width: 500px;
   height: auto;
   padding: 22px;
@@ -45,37 +45,37 @@ a {
   flex-direction: column;
 }
 
-.createPostContainer h1 {
+.create-post-container h1 {
   text-align: center;
 }
 
-.createPostContainer label {
+.create-post-container label {
   font-size: 28px;
 }
 
-.createPostContainer .inputCreate {
+.create-post-container .input-create {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.inputCreate input,
-.inputCreate textarea {
+.input-create input,
+.input-create textarea {
   font-size: 18px;
   border: none;
   border-radius: 2px;
   padding: 5px;
 }
 
-.inputCreate input {
+.input-create input {
   height: 42px;
 }
 
-.inputCreate textarea {
+.input-create textarea {
   height: 150px;
 }
 
-.createPostContainer button {
+.create-post-container button {
   margin-top: 20px;
   height: 40px;
   border: none;
@@ -89,7 +89,7 @@ textarea {
   margin-top: 5px;
 }
 
-.loginPage {
+.login-page {
   width: 100vw;
   height: calc(100vh - 80px);
   display: flex;
@@ -98,7 +98,7 @@ textarea {
   align-items: center;
 }
 
-.loginPage p {
+.login-page p {
   font-size: 30px;
 }
 
@@ -145,7 +145,7 @@ textarea {
 
 /* homePage , pending to create files per pages */
 
-.homePage {
+.home-page {
   width: 100%;
   min-height: calc(100vh - 80px);
   height: auto;
@@ -159,7 +159,7 @@ textarea {
   margin: 0;
 }
 
-.homePage .tips {
+.home-page .tips {
   /* width: 600px; */
   max-width: 100%;
   height: auto;
@@ -171,35 +171,97 @@ textarea {
   border-radius: 15px;
 }
 
-.tips .tipsHeader {
+.tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tips .tips-header {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.postHeader .title {
+.post-header .title {
   flex: 50%;
 }
-.postHeader .deletePost {
+.post-header .delete-post {
   flex: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.deletePost button {
+.delete-post button {
   border: none;
-
   background: none;
   font-size: 30px;
   cursor: pointer;
 }
 
-.tips .listTipsContainer {
+.tips .list-tips-container {
   word-wrap: break-word;
   height: auto;
+  margin-top: 10px;
   max-height: 400px;
-  width: 100%;
+  /* font-size: bold; */
   overflow: hidden;
   overflow-y: auto;
+}
+
+.update-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-tip input {
+  width: 50%;
+}
+
+.update-tip button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 0.5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.update-tip button:hover {
+  /* background-color: #0056b3; */
+  background-color: rgb(17, 17, 85);
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    width: 86%
+  }
+  .home-page {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .home-page .tips {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    width: 90%
+  }
+  .home-page {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+  .home-page .tips > h2 {
+    margin-bottom: 2rem;
+  }
 }

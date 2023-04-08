@@ -22,16 +22,16 @@ function AddTips({isAuth}) {
   }, [])
 
   return (
-    <div className='createPostPage'>
-      <div className='createPostContainer'>
+    <div className='create-post-page'>
+      <div className='create-post-container'>
         <h1>Add tip</h1>
-        <div className='inputCreate'>
+        <div className='input-create'>
           <label>Date:</label>
           <input placeholder='Input date' onChange={(event) => {
             setTitle(event.target.value)
           }}/>
         </div>
-        <div className='inputCreate'>
+        <div className='input-create'>
           <label>Tips</label>
           <input type="number" placeholder='$...'onChange={(event) => {
             setAddTip(event.target.value)

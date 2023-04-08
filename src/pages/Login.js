@@ -14,7 +14,7 @@ function Login({ setIsAuth }) {
         })
     }
   return (
-    <div className='loginPage'>
+    <div className='login-page'>
         {/* <p>Sign with google</p> */}
         <button className='login-with-google-btn' onClick={signInWithGoogle}>
             Sign with Google Account
