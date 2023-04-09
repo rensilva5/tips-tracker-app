@@ -6,7 +6,7 @@ import { getAuth, GoogleAuthProvider} from  'firebase/auth'
 // TODO: Add SDKs for Firebase products that you want to use
 // import JSON from 'json3'
 
-const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
+const firebaseConfig = (process.env.FIREBASE_CONFIG);
 
 
 
