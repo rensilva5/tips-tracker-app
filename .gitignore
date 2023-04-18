@@ -4,8 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-# firebase-Config.js
-
+/.firebase-Config.js
+firebase-Config.js
+/firebase-Config.js
 
 # testing
 /coverage
