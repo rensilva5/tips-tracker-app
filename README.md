@@ -5,7 +5,7 @@
 * name it and cd in,then type 'code .'
 * Delete all components you are not using
 * Create pages folder
-* Indide pages create components needed
+* Inside pages create components as needed
 
 ## Config Firebase
 * Go to console if you alredy have an account.
